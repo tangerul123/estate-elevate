@@ -1,0 +1,61 @@
+/*----------------------------------------*/
+/*   07. faq CSS
+/*----------------------------------------*/
+.faq-area {
+    padding-top: 100px;
+}
+.f-faq {
+    margin-top: 50px;
+    & .accordion-item {
+        margin-bottom: 30px;
+        border: none;
+        background: none;
+        transition: 0.3s;
+        & h5 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #102641;
+            @media #{$tablet-device} {
+                font-size: 17px;
+            }
+            @media #{$large-mobile} {
+                font-size: 16px;
+            }
+        }
+        & span {
+            margin-right: 25px;
+        }
+        &:hover {
+            & span {
+                color: #d4003a;
+            }
+        }
+        & .accordion-button {
+            background: #f0f1f3;
+            box-shadow: none;
+            &::after {
+                content: "\f106";
+                font-family: FontAwesome;
+                background: #ccc;
+                text-align: center;
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                font-size: 20px;
+                border-radius: 100%;
+                transition: 0.3s ease;
+                &:hover {
+                    background: #d4003a;
+                }
+            }
+        }
+        & .accordion-body {
+            & p {
+                font-size: 18px;
+                @media #{$large-mobile} {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

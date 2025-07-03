@@ -1,0 +1,142 @@
+/*----------------------------------------*/
+/*  01. Template default CSS
+/*----------------------------------------*/
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+/* Common Style */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.5;
+	overflow-x: hidden;
+	color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headings-font-family;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0;
+	color: $headings-color;
+}
+
+h1 {
+	font-size: 68px;
+}
+h2 {
+	font-size: 52px;
+}
+h3 {
+	font-size: 38px;
+}
+h4 {
+	font-size: 28px;
+}
+h5 {
+	font-size: 22px;
+}
+h6 {
+	font-size: 20px;
+}
+
+p {
+	margin: 0;
+}
+caption {
+	font-size: 12px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a,
+button {
+	line-height: inherit;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+
+*:focus {
+	outline: none;
+}
+
+button:focus,
+a:focus {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+	outline: none;
+}
+
+input,
+textarea {
+	@include placeholder {
+		opacity: 1;
+	}
+}
+
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+hr {
+	border-top-width: 2px;
+}

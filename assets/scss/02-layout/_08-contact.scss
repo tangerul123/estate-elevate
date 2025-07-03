@@ -1,0 +1,78 @@
+/*----------------------------------------*/
+/*   08. contact CSS
+/*----------------------------------------*/
+.contact-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact-box {
+    margin-top: 50px;
+    background: #000047;
+    border-radius: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media #{$large-mobile} {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    @media #{$extra-small-mobile} {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    & .contact-form-title {
+        & h4 {
+            color: #fff;
+            font-size: 30px;
+            line-height: 40px;
+            border-bottom: 1px solid #5c21d0;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            @media #{$tablet-device} {
+                font-size: 24px;
+            }
+            @media #{$large-mobile} {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.check-box {
+    text-align: center;
+    & label {
+        padding-right: 15px;
+        color: #cacaca;
+        @media #{$tablet-device} {
+            padding-right: 20px;
+        }
+    }
+    @media #{$large-mobile} {
+        & span {
+            display: block;
+            text-align: left;
+        }
+    }
+}
+.input-s1 {
+    padding: 6px 18px;
+    background: transparent;
+    border: 1px solid #5c21d0;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: #fff;
+    @media #{$extra-small-mobile} {
+        margin-bottom: 20px;
+    }
+}
+label {
+    font-size: 17px;
+    color: #cacaca;
+    font-weight: 400;
+    margin-bottom: 17px;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+    @media #{$desktop-device} {
+        font-size: 13px;
+    }
+}

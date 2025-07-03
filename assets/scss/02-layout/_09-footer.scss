@@ -1,0 +1,59 @@
+/*----------------------------------------*/
+/*   09. footer CSS
+/*----------------------------------------*/
+.footer-widget-area {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.footer-widget {
+    & .footer-widget-title {
+        color: #102641;
+        font-size: 30px;
+        font-size: 700;
+        margin-bottom: 30px;
+    }
+    & p {
+        color: #222222;
+        margin-bottom: 15px;
+    }
+    & .footer-contact {
+        & .footer-contact-item {
+            margin-bottom: 20px;
+            & p {
+                & a {
+                    font-size: 20px;
+                    transition: 0.3s;
+                    &:hover {
+                        color: #d4003a;
+                    }
+                }
+            }
+        }
+    }
+    & ul {
+        overflow: hidden;
+        & li {
+            margin-bottom: 8px;
+            color: #222222;
+            width: 50%;
+            float: left;
+            & a {
+                & i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.footer-social {
+    margin-top: 12px;
+    display: flex;
+    & a {
+        transition: 0.3s;
+        margin-right: 10px;
+        font-size: 25px;
+        &:hover {
+            color: #d4003a;
+        }
+    }
+}

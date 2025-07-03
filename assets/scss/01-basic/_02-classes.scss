@@ -1,0 +1,151 @@
+/*----------------------------------------*/
+/*  02. Classes CSS
+/*----------------------------------------*/
+
+.tp-btn {
+    text-align: center;
+    height: 50px;
+    background: #d4003a;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    &:hover {
+        background: #212121;
+    }
+}
+.form-btn {
+    text-align: center;
+    height: 50px;
+    background: #d4003a;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    border: none;
+    &:hover {
+        background: #212121;
+    }
+}
+.tp-btn-white {
+    text-align: center;
+    height: 50px;
+    background: #fff;
+    display: inline-block;
+    font-size: 14px;
+    color: #212121;
+    line-height: 52px;
+    padding: 0px 36px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: 0.3s;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+    @media #{$large-mobile} {
+        margin-left: 0px;
+    }
+    &:hover {
+        background: #3c8599;
+        color: #fff;
+    }
+}
+
+.black-btn {
+    text-align: center;
+    height: 50px;
+    background: #171717;
+    display: inline-block;
+    font-size: 14px;
+    color: #ffff;
+    line-height: 52px;
+    padding: 0px 36px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-left: 0px;
+    transition: 0.3s;
+    &:hover {
+        background: #ffff;
+        color: #171717;
+    }
+}
+
+// Section Title
+.section-title {
+    &--sub-title {
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #102641;
+        font-weight: 400;
+    }
+
+    &--title {
+        font-size: 70px;
+        color: #102641;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        @media #{$desktop-device} {
+            font-size: 45px;
+        }
+        @media #{$large-mobile} {
+            font-size: 35px;
+        }
+        @media #{$tablet-device} {
+            font-size: 35px;
+        }
+        @media #{$extra-small-mobile} {
+            font-size: 30px;
+        }
+    }
+}
+// back to top 
+#button {
+  display: inline-block;
+  background-color: #102641;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+    @media #{$extra-small-mobile} {
+        width: 30px;
+        height: 30px;
+
+    }
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+    @media #{$extra-small-mobile} {
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

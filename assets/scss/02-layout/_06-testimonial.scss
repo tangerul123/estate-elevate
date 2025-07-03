@@ -1,0 +1,112 @@
+/*----------------------------------------*/
+/*   06. Testimonial  CSS
+/*----------------------------------------*/
+.testimonal-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.testimonial {
+    & .testimonal-thum-img {
+        height: 130px;
+        width: 130px;
+        margin: 0 auto 40px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    & .client-review {
+        margin-right: 200px;
+        margin-left: 200px;
+        @media #{$large-mobile} {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        @media #{$extra-small-mobile} {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        & P {
+            font-size: 20px;
+            color: #444;
+            font-weight: 400;
+        }
+    }
+    & .client-name {
+        margin-top: 20px;
+        & p {
+            color: #000;
+            & span {
+                color: #d4003a;
+            }
+        }
+    }
+}
+.testimonial-slider {
+    position: relative;
+    margin-top: 50px;
+    & .prev {
+        font-size: 30px;
+        position: absolute;
+        bottom: -100px;
+        left: 500px;
+        height: 70px;
+        width: 70px;
+        background: #ccc;
+        text-align: center;
+        color: #000;
+        line-height: 70px;
+        border-radius: 100%;
+        transition: 0.3s;
+        @media #{$laptop-device} {
+            left: 450px;
+        }
+        @media #{$desktop-device} {
+            left: 350px;
+        }
+        @media #{$tablet-device} {
+            left: 200px;
+        }
+        @media #{$large-mobile} {
+            left: 150px;
+        }
+        @media #{$extra-small-mobile} {
+            left: 50px;
+        }
+        &:hover {
+            background: #d4003a;
+            color: #fff;
+        }
+    }
+    & .next {
+        font-size: 30px;
+        position: absolute;
+        bottom: -100px;
+        right: 500px;
+        height: 70px;
+        width: 70px;
+        background: #ccc;
+        text-align: center;
+        color: #000;
+        line-height: 70px;
+        border-radius: 100%;
+        transition: 0.3s;
+        @media #{$laptop-device} {
+            right: 450px;
+        }
+        @media #{$desktop-device} {
+            right: 350px;
+        }
+        @media #{$tablet-device} {
+            right: 200px;
+        }
+        @media #{$large-mobile} {
+            right: 150px;
+        }
+        @media #{$extra-small-mobile} {
+            right: 50px;
+        }
+        &:hover {
+            background: #d4003a;
+            color: #fff;
+        }
+    }
+}

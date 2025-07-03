@@ -1,0 +1,27 @@
+/*----------------------------------------*/
+/*  00.1. video CSS
+/*----------------------------------------*/
+.video-area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: whitesmoke;
+}
+.video-main {
+    & iframe {
+	    width: 100%;
+        border-radius: 10px;
+        height: 615px;
+        @media #{$tablet-device} {
+        height: 390px;
+        }
+        @media #{$large-mobile} {
+        height: 290px;
+        }
+        @media #{$small-mobile} {
+        height: 290px;
+        }
+        @media #{$extra-small-mobile} {
+        height: 200px;
+        }
+    }
+}

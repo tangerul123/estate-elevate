@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: 
+    Version: 1.0.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    00 - Helpers (Variables & Mixins)
+    01 - Basic (Typography, Common Classes)
+        01.01 - Typography
+        01.02 - Common Classes
+    02 - Layout (Header, Footer, Section, Main Container/Wrapper and Page Header Styles)
+        02.01 - Header
+        02.02 - Footer
+        02.03 - Main Content Wrapper, Sections & Section Heading
+    03 - Modules (Template Design Elements as Modules and Third party Plugins Custom Styles)
+
+-----------------------------------------------------------------------------------*/
+
+@import "./00-helpers/index";
+@import "./01-basic/index";
+@import "./02-layout/index";
+@import "./03-modules/index";

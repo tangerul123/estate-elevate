@@ -1,0 +1,35 @@
+/*----------------------------------------*/
+/*   05. fact  CSS
+/*----------------------------------------*/
+.factor-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.fact {
+    & .fact-counter {
+        & p {
+            font-size: 75px;
+            color: #d4003a;
+            font-weight: 700;
+            line-height: 1;
+            @media #{$extra-small-mobile} {
+                font-size: 50px;
+            }
+            & span {
+                color: #102641;
+            }
+        }
+    }
+    .fact-content {
+        margin-top: 20px;
+        & p {
+            font-size: 17px;
+            font-weight: 400;
+            color: #444;
+            text-transform: capitalize;
+            @media #{$extra-small-mobile} {
+                font-size: 15px;
+            }
+        }
+    }
+}

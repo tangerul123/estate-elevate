@@ -1,0 +1,57 @@
+/*----------------------------------------*/
+/*  03. Services CSS
+/*----------------------------------------*/
+
+.service-area {
+    padding-top: 100px;
+    @media #{$extra-small-mobile} {
+        padding-top: 50px;
+    }
+}
+
+.service-categories {
+    margin-top: 20px;
+}
+
+.service-item {
+    margin-top: 30px;
+
+    &--title {
+        display: flex;
+        align-items: center;
+
+        & img {
+            padding-right: 16px;
+            width: auto;
+            height: auto;
+        }
+
+        & .title {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #102641;
+            flex: 1;
+            @media #{$large-mobile} {
+                font-size: 20px;
+            }
+            @media #{$extra-small-mobile} {
+                font-size: 18px;
+            }
+        }
+    }
+    &--list {
+        margin-top: 20px;
+        margin-left: 20px;
+
+        & li {
+            list-style-type: square;
+            color: #000;
+            padding-bottom: 10px;
+            font-size: 18px;
+            @media #{$extra-small-mobile} {
+                font-size: 16px;
+            }
+        }
+    }
+}
